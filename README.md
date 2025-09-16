@@ -1,0 +1,2 @@
+# labubu-cli
+Cursed.
