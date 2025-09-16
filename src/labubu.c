@@ -1,8 +1,8 @@
- #include <stdio.h>
+ #include <stdio.h> // Standard library for printing.
 
  // This function prints a labubu to the cli.
 int main() {
-    const char* labubu_art = 
+    const char* labubu_art = // Beautiful labubu art. Thank you Internet!
 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠀⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠗⠀⠀⣀⣄⠀⢿⣿⣿⣿⠟⠁⢠⡆⠉⠙⢻⣿⣿⣿⣿⣿⣿⣿⣿\n"
 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⣴⣿⡟⠀⠘⣿⣿⠋⠀⠀⠀⢠⣶⡀⠈⢻⣿⣿⣿⣿⣿⣿⣿⣿\n"
@@ -39,5 +39,5 @@ int main() {
 
     
   printf("%s", labubu_art); // Prints labubu and formats as string.
-  return 0;
+  return 0; // Quits.
 } 
