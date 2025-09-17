@@ -2,7 +2,7 @@
 CC = gcc
 
 # Compiler flags
-CFLAGS = -Wall -Wextra -std=c99 -O2
+CFLAGS = -Wall -Wextra -std=c99 -O2 -fstack-protector-strong -D_FORTIFY_SOURCE=2
 
 # Source and object directories
 SRCDIR = src
