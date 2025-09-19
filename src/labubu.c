@@ -30,16 +30,14 @@ int safe_print_labubu(const char* labubu_art) {
     
     if ((size_t)result >= sizeof(output_buffer)) {
         fprintf(stderr, "Warning: Output was truncated\n");
-        // Still print what we can
-        printf("%s", output_buffer);
-    } else {
-        printf("%s", output_buffer);
     }
     
-    fflush(stdout);  // Ensure immediate output
+    printf("%s", output_buffer);  // Single print statement
+    fflush(stdout);  // Optional but often unnecessary
     
     return 0;  // Success
 }
+
 
 // Main function with comprehensive error handling and security measures
 int main(void) {
