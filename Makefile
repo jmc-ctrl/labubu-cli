@@ -36,7 +36,7 @@ SOURCES = $(wildcard $(SRCDIR)/*.c)
 OBJECTS = $(SOURCES:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 
 # Executable name
-TARGET = program
+TARGET = labubu-cli
 
 # Default target
 .PHONY: all clean run
