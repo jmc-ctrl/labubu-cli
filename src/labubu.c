@@ -79,29 +79,19 @@ int main(void) {
     int exit_code = 0;
     
     // Validate the constant string (even though it's hardcoded)
-    if (labubu_art == NULL || strlen(labubu_art) == 0) {
-        fprintf(stderr, "Critical Error: Labubu art is invalid\n");
-        return EXIT_FAILURE;
-    }
-    
-    // Use safer printing function with error handling
-    exit_code = safe_print_labubu(labubu_art);
-    
-    if (exit_code != 0) {
-        fprintf(stderr, "Failed to print labubu art properly\n");
-        return EXIT_FAILURE;
-    }
-    
-    // Add newline for better formatting
-    printf("\n");
-    
-    // Explicitly flush output buffer
-    fflush(stdout);
-    
-    // Print exit status information
-    if (exit_code == 0) {
-        fprintf(stderr, "Labubu printed successfully\n");
-    }
+if (labubu_art == NULL || strlen(labubu_art) == 0) {
+    fprintf(stderr, "Critical Error: Labubu art is invalid\n");
+    return EXIT_FAILURE;
+}
+
+// Use safer printing function with error handling
+exit_code = safe_print_labubu(labubu_art);
+if (exit_code != 0) {
+    fprintf(stderr, "Failed to print labubu art properly\n");
+    return EXIT_FAILURE;
+}
+
+printf("\n");  // Print newline for better formatting
     
     return EXIT_SUCCESS;
 }
