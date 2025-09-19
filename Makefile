@@ -2,7 +2,28 @@
 CC = gcc
 
 # Compiler flags
-CFLAGS = -Wall -Wextra -std=c99 -O2 -fstack-protector-strong -D_FORTIFY_SOURCE=2
+CFLAGS = -Wall -Wextra -std=c99 -O3 -fstack-protector-strong -D_FORTIFY_SOURCE=2 \
+         -fno-asynchronous-unwind-tables \
+         -fomit-frame-pointer \
+         -fmerge-constants \
+         -fdata-sections \
+         -ffunction-sections \
+         -fvisibility=hidden \
+         -fno-ident \
+         -fno-dce \
+         -fno-optimize-sibling-calls \
+         -fno-tree-loop-optimize \
+         -fno-unroll-loops \
+         -fno-peel-loops \
+         -fno-split-wide-types \
+         -fno-var-tracking-assignments \
+         -fno-lto \
+         -fno-stack-check \
+         -fno-builtin \
+         -fno-trapping-math \
+         -fno-signed-zeros \
+         -fno-strict-overflow
+
 
 # Source and object directories
 SRCDIR = src
