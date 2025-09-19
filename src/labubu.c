@@ -19,7 +19,7 @@ int safe_print_labubu(const char* labubu_art) {
     }
     
     // Use snprintf for controlled output instead of direct printf
-    char output_buffer[3172];
+    char output_buffer[4096];
     int result = snprintf(output_buffer, sizeof(output_buffer), "%s", labubu_art);
     
     // Check if snprintf succeeded and didn't truncate
